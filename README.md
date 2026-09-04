@@ -29,7 +29,7 @@ Folders follow CSES's own topic categories.
 
 | Topic | Solved | Total |
 |---|---|---|
-| Introductory Problems | 0 | 24 |
+| Introductory Problems | 2 | 24 |
 | Sorting and Searching | 0 | 35 |
 | Dynamic Programming | 0 | 23 |
 | Graph Algorithms | 0 | 36 |

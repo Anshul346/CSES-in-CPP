@@ -1,25 +1,24 @@
-# Weird Algorithm
+# Missing Number
 
-**CSES Link:** [Weird Algorithm](https://cses.fi/problemset/task/1068)
+**CSES Link:** [Missing Number](https://cses.fi/problemset/task/1083/)
 
 **Topic:** Introductory Problems
 
 **Difficulty:** Easy
 
-
-
 ## Problem Summary
-Given the input `n`,if `n` is odd, multiply it by 3 and then add 1 to it. If `n` is even divide it by 2. Repeat the process till you get 1.
+You are given a series of numbers from `1` to `n` where one number is missing. Find the number.
 
 ## Approach
-Just follow the question's steps and print the value of `n`(updated) after each iteration. Atlast, print the `\n` character.
+Create a variable and store the sum of all the numbers from `1` to `n`. Traverse the series and subtract each number from that variable. After the traversal,the remaining value is the missing number.
 
 
 ## Complexity
-- **Time:** O(k) , where k = the number of values before reaching 1.
+- **Time:** O(n)
 - **Space:** O(1)
 
-##Code
+
+## Code
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -75,17 +74,13 @@ int modpow(int a,int b,int mod=MOD){
 void solve(){
     int n;
     cin >> n;
-    
-    cout << n << " ";
-    while(n!=1){
-        if(n%2){
-            n = n*3+1;
-        }else{
-            n /= 2;
-        }
-        cout << n << " ";
-    }
-    cout << endl;
+    vi v(n-1);
+    inp(v);
+
+    int ans = n*(n+1)/2;
+    each(x,v) ans-=x;
+    cout << ans << endl;
+
     return;
 }
 
