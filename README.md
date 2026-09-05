@@ -29,7 +29,7 @@ Folders follow CSES's own topic categories.
 
 | Topic | Solved | Total |
 |---|---|---|
-| Introductory Problems | 5 | 24 |
+| Introductory Problems | 6 | 24 |
 | Sorting and Searching | 0 | 35 |
 | Dynamic Programming | 0 | 23 |
 | Graph Algorithms | 0 | 36 |
@@ -54,7 +54,7 @@ Folders follow CSES's own topic categories.
 
 
 ## Tech / Conventions
-- Language: C++23
+- Language: C++20
 - Template : https://github.com/Anshul346/cp-template
 
 ## About
