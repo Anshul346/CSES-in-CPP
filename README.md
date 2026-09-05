@@ -11,7 +11,7 @@ Files are organized by CSES's own topic categories.
 
 | Topic | Solved | Total |
 |---|---|---|
-| Introductory Problems | 7 | 24 |
+| Introductory Problems | 12 | 24 |
 | Sorting and Searching | 0 | 35 |
 | Dynamic Programming | 0 | 23 |
 | Graph Algorithms | 0 | 36 |
