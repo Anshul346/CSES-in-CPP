@@ -1,35 +1,17 @@
 # CSES Problem Set Solutions
 
-Solutions and explanations for problems from the [CSES Problem Set](https://cses.fi/problemset/), written in C++.
+Solutions for problems from the [CSES Problem Set](https://cses.fi/problemset/), written in C++.
 
-Each problem has its own folder containing the solution code and a README explaining the approach, complexity, and edge cases — not just the final code.
+This repo is my attempt to document the solutions of the [CSES Problem Set](https://cses.fi/problemset/) as a record of learning and a reference for revisiting concepts later.
 
-## Why this repo exists
-Solving problems is one thing but explaining *why* an approach works is another. This repo is my attempt to document not just solutions, but the reasoning, common pitfalls, and complexity trade-offs behind each one — as a record of learning and a reference for revisiting concepts later.
+Files are organized by CSES's own topic categories.
 
-## Structure
-```
-cses-in-cpp/
-├── introductory-problems/
-│   ├── werid-algorithm/
-│   │   ├── README.md
-│   │   └── solution.cpp
-│   └── ...
-├── sorting-and-searching/
-├── dynamic-programming/
-├── graph-algorithms/
-├── range-queries/
-├── tree-algorithms/
-├── mathematics/
-└── ...
-```
-Folders follow CSES's own topic categories.
 
 ## Progress
 
 | Topic | Solved | Total |
 |---|---|---|
-| Introductory Problems | 6 | 24 |
+| Introductory Problems | 7 | 24 |
 | Sorting and Searching | 0 | 35 |
 | Dynamic Programming | 0 | 23 |
 | Graph Algorithms | 0 | 36 |
@@ -51,8 +33,6 @@ Folders follow CSES's own topic categories.
 
 
 
-
-
 ## Tech / Conventions
 - Language: C++20
 - Template : https://github.com/Anshul346/cp-template
@@ -63,6 +43,3 @@ Maintained as part of ongoing competitive programming practice. Feedback and sug
 ## Acknowledgement
 Thanks to the CSES Problem Set creators for providing such an amazing platform for competitive programming practice.
 
-Problem Set Link : https://cses.fi/problemset/list/
-
-CSES ID : https://cses.fi/user/452868

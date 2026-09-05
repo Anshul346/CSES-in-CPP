@@ -1,27 +1,3 @@
-# Repetitions
-
-**CSES Link:** [Repetitions](https://cses.fi/problemset/task/1069)
-
-**Topic:** Introductory Problems 
-
-**Difficulty:** Easy
-
-
-## Problem Summary
-Given a string `s` , find the longest substring that contains only one type of character.
-
-## Approach
-Initialise the current length counter with `1` and traverse the string from index `1`,if the current character is the same as the previous one, then increment the current length, otherwise, check if the current length is larger than the global maximum length till then, if so update it and reinitialise the current length with `1`.
-
-
-## Complexity
-- **Time:** O(n)
-- **Space:** O(1) 
-
-
-
-## Code
-```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -74,21 +50,19 @@ int modpow(int a,int b,int mod=MOD){
 }
 
 void solve(){
-    string s;
-    cin >> s;
+    int n;
+    cin >> n;
 
-    int n = sz(s),len = 1,curr = 1;
-    for(int i=1;i<n;i++){
-        if(s[i]!=s[i-1]){
-            len = max(len,curr);
-            curr = 1;
+    for(int k=1;k<=n;k++){
+        if(k==1){
+            cout << 0 << endl;
         }else{
-            curr++;
+            int total_cells = k*k;
+            int total_ways = total_cells*(total_cells-1)/2;
+            int ans = total_ways - (k-1)*(k-2)*2*2;
+            cout << ans << endl;
         }
     }
-    len = max(len,curr);
-
-    cout << len << endl;
     return;
 }
 
@@ -102,4 +76,3 @@ int32_t main(){
 
     return 0;
 }
-```
